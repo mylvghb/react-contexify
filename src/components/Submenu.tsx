@@ -1,7 +1,7 @@
 import React, { ReactNode, useEffect, useRef, useState } from 'react';
 import cx from 'clsx';
 
-import { InternalProps, BooleanPredicate, HandlerParamsEvent } from '../types';
+import { BooleanPredicate, HandlerParamsEvent, InternalProps } from '../types';
 import { RefTrackerProvider, useRefTrackerContext } from './RefTrackerProvider';
 import { useRefTracker } from '../hooks';
 import { STYLE } from '../constants';
@@ -26,7 +26,7 @@ export interface SubMenuProps
   arrow?: ReactNode;
 
   /**
-   * Passed to the `Item` onClick callback. Accessible via `data`
+   * Passed to the `Submenu` hidden/disabled predicate. Accessible via `data`
    */
   data?: any;
 

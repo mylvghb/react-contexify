@@ -2,10 +2,10 @@ import React, { ReactNode } from 'react';
 import cx from 'clsx';
 
 import {
-  ItemParams,
-  InternalProps,
   BooleanPredicate,
   HandlerParamsEvent,
+  InternalProps,
+  ItemParams,
 } from '../types';
 import { useRefTrackerContext } from './RefTrackerProvider';
 import { NOOP, STYLE } from '../constants';
@@ -20,7 +20,7 @@ export interface ItemProps
   children: ReactNode;
 
   /**
-   * Passed to the `Item` onClick callback. Accessible via `data`
+   * Passed to the `Item` onClick callback and hidden/disabled predicate. Accessible via `data`
    */
   data?: any;
 
