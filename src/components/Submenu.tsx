@@ -26,6 +26,11 @@ export interface SubMenuProps
   arrow?: ReactNode;
 
   /**
+   * Passed to the `Item` onClick callback. Accessible via `data`
+   */
+  data?: any;
+
+  /**
    * Disable the `Submenu`. If a function is used, a boolean must be returned
    */
   disabled?: BooleanPredicate;
@@ -46,10 +51,12 @@ interface SubMenuState {
 export const Submenu: React.FC<SubMenuProps> = ({
   arrow = '▶',
   children,
+
   disabled = false,
   hidden = false,
   label,
   className,
+  data,
   triggerEvent,
   propsFromTrigger,
   style,
@@ -64,6 +71,7 @@ export const Submenu: React.FC<SubMenuProps> = ({
     bottom: 'initial',
   });
   const handlerParams = {
+    data,
     triggerEvent: triggerEvent as HandlerParamsEvent,
     props: propsFromTrigger,
   };
