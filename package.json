@@ -39,11 +39,11 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-contexify",
+  "name": "@mylvghb/react-contexify",
   "author": "Fadi Khadra <fdkhadra@gmail.com> (https://github.com/fkhadra)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fkhadra/react-contexify.git"
+    "url": "git+https://github.com/mylvghb/react-contexify.git"
   },
   "bugs": {
     "url": "https://github.com/fkhadra/react-contexify/issues"
