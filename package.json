@@ -1,5 +1,5 @@
 {
-  "version": "5.0.0",
+  "version": "5.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -39,7 +39,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@mylvghb/react-contexify",
+  "name": "@lilanjun/react-contexify",
   "author": "Fadi Khadra <fdkhadra@gmail.com> (https://github.com/fkhadra)",
   "repository": {
     "type": "git",

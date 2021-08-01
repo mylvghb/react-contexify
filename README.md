@@ -18,13 +18,13 @@ Go [here](https://fkhadra.github.io/react-contexify).
 Using yarn
 
 ```sh
-$ yarn add react-contexify
+$ yarn add @lilanjun/react-contexify
 ```
 
 Using npm
 
 ```sh
-$ npm install --save react-contexify
+$ npm install --save @lilanjun/react-contexify
 ```
 
 ## The gist
