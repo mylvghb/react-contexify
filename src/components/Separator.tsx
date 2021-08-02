@@ -18,7 +18,7 @@ export interface SeparatorProps
   hidden?: BooleanPredicate;
 }
 
-const Separator: React.FC<SeparatorProps> = ({
+export const Separator: React.FC<SeparatorProps> = ({
   triggerEvent,
   data,
   propsFromTrigger,
@@ -33,5 +33,3 @@ const Separator: React.FC<SeparatorProps> = ({
   const isHidden = getPredicateValue(hidden, handlerParams);
   return isHidden ? null : <div className={STYLE.separator} style={style} />;
 };
-
-export default Separator;
